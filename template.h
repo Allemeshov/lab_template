@@ -1,5 +1,5 @@
 //
-// Created by Alexander on 06.09.2021.
+// Created by Alexander Lemeshov.
 //
 
 #ifndef LAB_TEMPLATE_TEMPLATE_H
@@ -7,9 +7,12 @@
 
 #include <iostream>
 
-void introduce(const std::string &authorsName, bool isFemale = false);
+#define MALE 0
+#define FEMALE 1
 
-void introduce(const std::string &authorsName, const std::string &email, bool isFemale = false);
+void introduce(const std::string &authorsName, const std::string &email, int sex = MALE);
+
+void introduce(const std::string &authorsName, int sex = MALE);
 
 
 void enterTaskNumber(int &selectedTask, const int &minTaskNumber, const int &maxTaskNumber);

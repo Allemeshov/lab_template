@@ -1,5 +1,5 @@
 //
-//  Was created by Alexander Lemeshov.
+//  Created by Alexander Lemeshov.
 //
 
 #include <iostream>
@@ -7,7 +7,8 @@
 
 
 int main() {
-    introduce("allemeshov@gmail.com");
+//    introduce("Александр Лемешов", "allemeshov@gmail.com");
+    introduce("Александр Лемешов", "allemeshov@gmail.com");
 
     int selectedTask = -1;
 

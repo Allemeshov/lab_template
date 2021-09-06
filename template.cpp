@@ -5,21 +5,20 @@
 #include "template.h"
 
 
-void introduce(const std::string &authorsName, bool isFemale) {
-    std::cout << "Приветствую!" << std::endl << std::endl;
+void introduce(const std::string &authorsName, int sex) {
+    std::cout << "\n\n\tПриветствую!\n\n";
 
-    std::cout << authorsName << " выполнил";
-    if (isFemale) std::cout << 'a';
-    std::cout << " данную лабораторную работу." << std::endl << std::endl;
+    std::cout << '\t' << authorsName << " выполнил";
+    if (sex == FEMALE) std::cout << 'a';
+    std::cout << " данную лабораторную работу.\n\n";
 }
 
-void introduce(const std::string &authorsName, const std::string &email, bool isFemale) {
-    std::cout << "\n\n\tПриветствую!"
-              << std::endl << std::endl;
+void introduce(const std::string &authorsName, const std::string &email, int sex) {
+    std::cout << "\n\n\tПриветствую!\n\n";
 
-    std::cout << authorsName << " выполнил";
-    if (isFemale) std::cout << 'a';
-    std::cout << " данную лабораторную работу." << std::endl << std::endl;
+    std::cout << '\t' << authorsName << " выполнил";
+    if (sex == FEMALE) std::cout << 'a';
+    std::cout << " данную лабораторную работу.\n\n";
 
     std::cout << '\t' << "По всем вопросам прошу обращаться по данному адресу: " << email
               << std::endl << std::endl << std::endl;
